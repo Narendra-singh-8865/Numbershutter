@@ -1,0 +1,254 @@
+#number {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 20px;
+  }
+  
+  .circle {
+    width: 60px;
+    height: 60px;
+    background-color: #3498db;
+    color: white;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    cursor: pointer;
+  }
+  
+  #info {
+    display: flex;
+    gap: 200px;
+    padding: 10px 20px;
+    flex-wrap: wrap;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+#submit,#start {
+    margin: 20px;
+    padding: 10px 20px;
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  /* ---------------------------------------------
+     MEDIA QUERIES
+  ----------------------------------------------*/
+  
+  /* Mobile Devices (portrait and small screens) */
+  @media (max-width: 480px) {
+    #info {
+        display: flex        ;
+            gap: 8px;
+            padding: 8px 24px;
+            flex-wrap: wrap;
+            font-size: 20px;
+            font-weight: bold;
+            flex-direction: row;
+    }
+  
+    .circle {
+      width: 40px;
+      height: 40px;
+      font-size: 12px;
+    }
+  
+   #submit , #reset {
+      width: 100%;
+      font-size: 14px;
+    }
+  }
+  
+  /* Tablets */
+  @media (min-width: 481px) and (max-width: 768px) {
+    #info {
+        display: flex
+        ;
+            gap: 8px;
+            padding: 8px 24px;
+            flex-wrap: wrap;
+            font-size: 20px;
+            font-weight: bold;
+            flex-direction: row;
+    }
+  
+    .circle {
+      width: 50px;
+      height: 50px;
+      font-size: 14px;
+    }
+  
+    #submit , #reset {
+      font-size: 15px;
+    }
+  }
+  
+  /* Small Laptops */
+  @media (min-width: 769px) and (max-width: 1024px) {
+    #info {
+        display: flex
+        ;
+            gap: 8px;
+            padding: 8px 24px;
+            flex-wrap: wrap;
+            font-size: 20px;
+            font-weight: bold;
+            flex-direction: row;
+    }
+  
+    .circle {
+      width: 55px;
+      height: 55px;
+      font-size: 16px;
+    }
+  }
+  
+  /* Desktops and larger */
+  @media (min-width: 1025px) {
+    #info {
+        display: flex ;
+            gap: 8px;
+            padding: 8px 24px;
+            flex-wrap: wrap;
+            font-size: 20px;
+            font-weight: bold;
+            flex-direction: row;
+    }
+  
+    .circle {
+      width: 60px;
+      height: 60px;
+      font-size: 18px;
+    }
+  }
+  @media (max-width: 480px) {
+    #info {
+        display: flex
+        ;
+            gap: 8px;
+            padding: 8px 24px;
+            flex-wrap: wrap;
+            font-size: 20px;
+            font-weight: bold;
+            flex-direction: row;
+    }
+  
+    .circle {
+      width: 40px;
+      height: 40px;
+      font-size: 12px;
+    }
+  
+    #submit , #reset {
+      width: 100%;
+      font-size: 14px;
+      padding: 8px 12px;
+      margin: 10px auto;
+      display: block;
+    }
+  
+    #number {
+      justify-content: center;
+      padding: 10px;
+      gap: 8px;
+    }
+  }
+/* === Base Styles (for all sizes) === */
+#number {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 20px;
+    justify-content: center;
+  }
+  
+  .circle {
+    width: 60px;
+    height: 60px;
+    background-color: #3498db;
+    color: white;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    cursor: pointer;
+    transition: transform 0.2s, background-color 0.2s;
+  }
+  
+  .circle:hover {
+    background-color: #2980b9;
+    transform: scale(1.1);
+  }
+  
+  #info {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 10px 20px;
+    font-size: 20px;
+    font-weight: bold;
+    justify-content: space-between;
+  }
+  
+  #submit , #reset {
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    display: block;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    transition: background-color 0.3s, transform 0.2s;
+  }
+  
+  #reset:hover {
+    background-color: #c0392b;
+    transform: scale(1.05);
+  }
+  
+  /* === Media Query for 430x932 Devices === */
+  @media (max-width: 430px) and (max-height: 932px) {
+    #info {
+        display: flex
+        ;
+            gap: 8px;
+            padding: 8px 24px;
+            flex-wrap: wrap;
+            font-size: 20px;
+            font-weight: bold;
+            flex-direction: row;
+    }
+  
+    .circle {
+      width: 45px;
+      height: 45px;
+      font-size: 14px;
+    }
+  
+    #submit , #reset {
+      width: 100%;
+      padding: 12px;
+      font-size: 14px;
+    }
+  
+    #number {
+      gap: 8px;
+      padding: 10px;
+    }
+  }
+      
